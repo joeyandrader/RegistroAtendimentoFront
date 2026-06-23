@@ -93,10 +93,12 @@ export const DataTable: React.FC<DataTableProps> = ({
                     {loading ?
                         (
                             <>
-                                <tr className="p-3 d-flex flex-column justify-content-center align-items-center">
-                                    <td>
-                                        <SpinnerLoading />
-                                        <p>Buscando dados da tabela!</p>
+                                <tr>
+                                    <td colSpan={columns.length + (actions.length > 0 ? 1 : 0)}>
+                                        <p style={{ textAlign: "center" }}>
+                                            <SpinnerLoading />
+                                            <p>Buscando dados da tabela!</p>
+                                        </p>
                                     </td>
                                 </tr>
                             </>
