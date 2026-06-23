@@ -1,0 +1,6 @@
+@import "bootstrap/scss/bootstrap";
+
+
+input::-webkit-calendar-picker-indicator {
+    display: block;
+}
